@@ -1,6 +1,7 @@
 // src/App.tsx
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
+import About from "./components/About";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <Navbar />
       <main className="flex-1">
         <Hero />
+        <About />
       </main>
     </div>
   );
