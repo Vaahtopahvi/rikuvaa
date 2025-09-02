@@ -11,7 +11,7 @@ function About() {
 
       {/* grid */}
       <div className="grid md:grid-cols-2 gap-12">
-        {/* frame and bitmoji. koklaa lisää ylös items-center TODO*/}
+        {/* frame and bitmoji.*/}
         {/* box*/}
         <div className="flex justify-center">
           {/* frame */}
@@ -51,13 +51,13 @@ function About() {
           </p>
           {/* quick fax */}
           <div className="flex mt-8 gap-8">
-            <div className="flex-1 text-center text-xl p-5 rounded-xl py-4 shadow-sm backdrop-blur-md">
+            <div className="flex-1 text-center border border-gray-200 dark:border-gray-700 text-xl p-5 rounded-xl py-4 shadow-sm backdrop-blur-md">
               <p className="text-indigo-600 dark:text-indigo-400 text-2xl font-bold">
                 2+
               </p>
               <p className="text-gray-700 dark:text-gray-300">Years learning</p>
             </div>
-            <div className="flex-1 text-center text-xl border border-indigo-600 p-5 rounded-xl py-4 shadow-sm">
+            <div className="flex-1 text-center border border-gray-200 dark:border-gray-700 text-xl p-5 rounded-xl py-4 shadow-sm backdrop-blur-md">
               <p className="text-indigo-600 dark:text-indigo-400 text-2xl font-bold">
                 10+
               </p>
