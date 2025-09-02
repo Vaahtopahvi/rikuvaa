@@ -34,7 +34,7 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 right-0 bg-background/80 backdrop-blur-md z-50 shadow-sm">
       <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
         {/* logo .. */}
-        <span className="font-bold text-xl text-indigo-600 dark:text-indigo-400">
+        <span className="font-bold text-xl bg-gradient-to-r from-indigo-500 to-purple-500 bg-clip-text text-transparent">
           Portfolio
         </span>
 
@@ -72,28 +72,31 @@ const Navbar = () => {
 
       {/* mobile menu */}
       {isOpen && (
-          <div ref={menuRef} className="rounded-lg shadow-md bg-background/95 backdrop-blur-md border border-gray-200 dark:border-gray-700">
-            <ul className="flex flex-col gap-2 py-4 px-6">
-              {links.map((link) => (
-                <li key={link.id}>
-                  <a
-                    href={`#${link.id}`}
-                    onClick={() => {
-                      setActive(link.id);
-                      setIsOpen(false); // Close menu on link click
-                    }}
-                    className={`block px-4 py-2 rounded-md ${
-                      active === link.id
-                        ? "text-indigo-600 dark:text-indigo-400 font-medium"
-                        : "text-gray-700 dark:text-gray-300"
-                    } hover:text-indigo-500 dark:hover:text-indigo-300 transition text-lg`}
-                  >
-                    {link.label}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
+        <div
+          ref={menuRef}
+          className="rounded-lg shadow-md bg-background/95 backdrop-blur-md border border-gray-200 dark:border-gray-700"
+        >
+          <ul className="flex flex-col gap-2 py-4 px-6">
+            {links.map((link) => (
+              <li key={link.id}>
+                <a
+                  href={`#${link.id}`}
+                  onClick={() => {
+                    setActive(link.id);
+                    setIsOpen(false); // Close menu on link click
+                  }}
+                  className={`block px-4 py-2 rounded-md ${
+                    active === link.id
+                      ? "text-indigo-600 dark:text-indigo-400 font-medium"
+                      : "text-gray-700 dark:text-gray-300"
+                  } hover:text-indigo-500 dark:hover:text-indigo-300 transition text-lg`}
+                >
+                  {link.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
       )}
     </nav>
   );

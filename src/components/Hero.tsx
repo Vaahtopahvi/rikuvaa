@@ -25,7 +25,7 @@ const Hero = () => {
       <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
         <a
           href="#projects"
-          className="px-6 py-3 rounded-xl bg-indigo-600 text-white hover:bg-indigo-500 transition"
+          className="px-6 py-3 rounded-xl bg-gradient-to-r from-indigo-500 to-purple-500 text-white hover:bg-indigo-500 transition"
         >
           View My Work
         </a>
