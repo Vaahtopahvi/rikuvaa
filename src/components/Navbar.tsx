@@ -31,7 +31,7 @@ const Navbar = () => {
   }, [isOpen]);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 bg-background/80 backdrop-blur-md z-50 shadow-sm">
+    <nav className="fixed top-0 left-0 right-0 bg-background/80 backdrop-blur-xl z-50 shadow-sm">
       <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
         {/* logo .. */}
         <span className="font-bold text-xl bg-gradient-to-r from-indigo-500 to-purple-500 bg-clip-text text-transparent">

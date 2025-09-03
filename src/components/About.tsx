@@ -1,6 +1,6 @@
 function About() {
   return (
-    <section id="about" className=" py-20 px-4 max-w-6xl mx-auto">
+    <section id="about" className="py-20 px-4 max-w-6xl mx-auto">
       <div className="mb-16 text-center">
         <h2 className="mb-4 font-bold text-4xl dark:text-white">About me</h2>
         <p className="text-xl sm:text-xl text-gray-500 dark:text-gray-400">
@@ -15,14 +15,13 @@ function About() {
         {/* box*/}
         <div className="flex justify-center">
           {/* frame */}
-          <div className="flex w-full rounded-2xl bg-gradient-to-br from-indigo-500 to-purple-500 shadow-lg justify-center items-center">
+          <div className="flex w-full aspect-square rounded-2xl bg-gradient-to-br from-indigo-500 to-purple-500 shadow-lg justify-center items-center p-14">
             {/* bitmoji */}
-            <div className="bg-white dark:bg-[var(--background)] rounded-2xl w-3/4 h-3/4 flex justify-center items-center">
+            <div className="bg-white dark:bg-[var(--background)] rounded-2xl w-full h-full flex justify-center items-center p-8">
               <img
                 src="src/assets/528f7f3e88fe812da8e0431b69ed2d23dc9169d644069e39dfd2dc1b4fcc59f4.0.png"
                 alt="riku bitmoji"
-                width={300}
-                height={300}
+                className="w-full h-full object-contain"
               />
             </div>
           </div>
