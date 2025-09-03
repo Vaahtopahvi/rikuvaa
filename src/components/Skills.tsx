@@ -1,4 +1,4 @@
-import { skills } from "../data/skills";
+import { skills, currentlyLearning } from "../data/skills";
 
 function Skills() {
   return (
@@ -44,6 +44,20 @@ function Skills() {
           </div>
         ))}
       </div>
+
+      <div className="mt-16">
+          <h3 className="text-xl font-semibold mb-6 text-center">Currently Learning</h3>
+          <div className="flex flex-wrap justify-center gap-4">
+            {currentlyLearning.map((item) => (
+              <span
+                key={item}
+                className="px-4 py-2 border border-blue-500 text-blue-600 dark:text-blue-400 rounded-full text-sm font-medium hover:bg-blue-600 transition hover:text-white 700"
+              >
+                {item}
+              </span>
+            ))}
+          </div>
+        </div>
     </section>
   );
 }
