@@ -21,4 +21,4 @@ export const skills = [
     },
   ];
   
-  export const currentlyLearning = ["Typescript", "Linux", "Python", "AI/ML Basics"];
+  export const currentlyLearning = ["Typescript", "Linux", "Python", "LLM/ML"];
