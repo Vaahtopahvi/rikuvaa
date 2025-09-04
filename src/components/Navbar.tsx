@@ -30,6 +30,29 @@ const Navbar = () => {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, [isOpen]);
 
+  // trackkaa aktiivista tabia riippuen missä oot
+  useEffect(() => {
+    const handleScroll = () => {
+      const sections = links
+        .map((link) => document.getElementById(link.id))
+        .filter(Boolean);
+      const scrollPosition = window.scrollY + 100; // offset for navbar height
+
+      for (let i = sections.length - 1; i >= 0; i--) {
+        const section = sections[i];
+        if (section && section.offsetTop <= scrollPosition) {
+          setActive(section.id);
+          break;
+        }
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    handleScroll();
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <nav className="fixed top-0 left-0 right-0 bg-background/80 backdrop-blur-xl z-50 shadow-sm">
       <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
