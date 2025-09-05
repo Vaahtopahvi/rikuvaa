@@ -11,7 +11,7 @@ const Hero = () => {
       <div className="absolute inset-0 bg-gradient-subtle opacity-30 pointer-events-none" />{" "}
       {/* Subtle background gradient. Pointer-events-none makes it clickable again*/}
       <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 dark:text-white">
-        Hello, I am{" "}
+        Hi, I am{" "}
         <span className="bg-gradient-to-r from-indigo-500 to-purple-500 bg-clip-text text-transparent">
           Riku
         </span>
@@ -25,7 +25,7 @@ const Hero = () => {
       <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
         <a
           href="#projects"
-          className="px-6 py-3 rounded-xl bg-gradient-to-r from-indigo-500 to-purple-500 text-white hover:bg-indigo-500 transition"
+          className="px-6 py-3 rounded-xl bg-gradient-to-r from-indigo-500 to-purple-500 text-white"
         >
           View My Work
         </a>
@@ -59,7 +59,7 @@ const Hero = () => {
         </a>
       </div>
       <div className="mt-16 flex flex-col items-center text-gray-500 dark:text-gray-400">
-        <span className="mb-2">Scroll down</span>
+        <span className="mb-2">Scroll Down</span>
         <ArrowDown className="animate-bounce" />
       </div>
     </section>
