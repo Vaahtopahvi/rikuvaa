@@ -32,32 +32,50 @@ function Skills() {
 
             {/* skill badges */}
             <div className="flex flex-wrap gap-2 transition">
-              {group.items.map((skill) => (
-                <span
-                  key={skill}
-                  className="px-3 py-1 bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 rounded-full text-sm font-medium hover:bg-blue-600 transition hover:text-white 700"
-                >
-                  {skill}
-                </span>
-              ))}
+              {group.items.map((skill) => {
+                const categoryColor = (() => {
+                  switch (group.category) {
+                    case "Frontend":
+                      return "bg-indigo-100 text-indigo-800 dark:bg-indigo-900 dark:text-indigo-200 hover:bg-indigo-600 hover:text-white";
+                    case "Backend":
+                      return "bg-emerald-100 text-emerald-800 dark:bg-emerald-900 dark:text-emerald-200 hover:bg-emerald-600 hover:text-white";
+                    case "Tools & DevOps":
+                      return "bg-amber-100 text-amber-800 dark:bg-amber-900 dark:text-amber-200 hover:bg-amber-600 hover:text-white";
+                    case "Soft Skills":
+                      return "bg-slate-100 text-slate-800 dark:bg-slate-900 dark:text-slate-200 hover:bg-slate-600 hover:text-white";
+                    default:
+                      return "bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-blue-600 hover:text-white";
+                  }
+                })();
+                return (
+                  <span
+                    key={skill}
+                    className={`px-3 py-1 rounded-full text-sm font-medium transition ${categoryColor}`}
+                  >
+                    {skill}
+                  </span>
+                );
+              })}
             </div>
           </div>
         ))}
       </div>
 
       <div className="mt-16">
-          <h3 className="text-xl font-semibold mb-6 text-center">Currently Learning</h3>
-          <div className="flex flex-wrap justify-center gap-4">
-            {currentlyLearning.map((item) => (
-              <span
-                key={item}
-                className="px-4 py-2 border border-blue-500 text-blue-600 dark:text-blue-400 rounded-full text-sm font-medium hover:bg-blue-600 transition hover:text-white 700"
-              >
-                {item}
-              </span>
-            ))}
-          </div>
+        <h3 className="text-xl font-semibold mb-6 text-center">
+          Currently Learning
+        </h3>
+        <div className="flex flex-wrap justify-center gap-4">
+          {currentlyLearning.map((item) => (
+            <span
+              key={item}
+              className="px-4 py-2 border border-blue-500 text-blue-600 dark:text-blue-400 rounded-full text-sm font-medium hover:bg-blue-600 transition hover:text-white 700"
+            >
+              {item}
+            </span>
+          ))}
         </div>
+      </div>
     </section>
   );
 }
