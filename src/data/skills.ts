@@ -12,7 +12,7 @@ export const skills = [
     {
       category: "Tools & DevOps",
       icon: "🛠️",
-      items: ["Git", "GitHub", "VS Code"],
+      items: ["Git", "GitHub", "VS Code", "Figma"],
     },
     {
       category: "Soft Skills",
