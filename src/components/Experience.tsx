@@ -17,7 +17,7 @@ function Experience() {
       case "Freelance":
         return "bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200";
       case "Education":
-        return "bg-purple-100 text-purple-800 dark:bg-purple-900 dark:text-purple-200";
+        return "bg-sky-100 text-sky-800 dark:bg-sky-900 dark:text-sky-200";
       default:
         return "bg-gray-100 text-gray-800 dark:bg-gray-900 dark:text-gray-200";
     }
@@ -120,7 +120,7 @@ function Experience() {
                           key={skill}
                           className={`px-3 py-1 rounded-full text-sm font-medium ${
                             isProgrammingSkill
-                              ? "bg-amber-100 dark:bg-amber-900/40 text-amber-900 dark:text-amber-200"
+                              ? "bg-orange-100 dark:bg-orange-900/40 text-orange-900 dark:text-orange-200"
                               : "bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300"
                           }`}
                         >
@@ -148,7 +148,7 @@ function Experience() {
               onClick={() => setActiveTab("highlights")}
               className={`px-3 py-1.5 sm:px-6 sm:py-2 rounded-md font-medium transition-colors text-sm sm:text-base ${
                 activeTab === "highlights"
-                  ? "bg-gradient-to-r from-indigo-500 to-purple-500 text-white shadow-sm"
+                  ? "bg-gradient-to-r from-sky-400 to-blue-500 dark:from-sky-500 dark:to-blue-700 text-white shadow-sm"
                   : "text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white"
               }`}
             >
@@ -158,11 +158,11 @@ function Experience() {
               onClick={() => setActiveTab("timeline")}
               className={`px-3 py-1.5 sm:px-6 sm:py-2 rounded-md font-medium transition-colors text-sm sm:text-base ${
                 activeTab === "timeline"
-                  ? "bg-gradient-to-r from-indigo-500 to-purple-500 text-white shadow-sm"
+                  ? "bg-gradient-to-r from-sky-400 to-blue-500 dark:from-sky-500 dark:to-blue-700 text-white shadow-sm"
                   : "text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white"
               }`}
             >
-              Full Timeline
+              Timeline
             </button>
           </div>
         </div>

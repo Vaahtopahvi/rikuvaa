@@ -5,7 +5,7 @@ export const experiences = [
     type: "Freelance",
     companyUrl: "https://teclo.fi",
     date: "August - September 2025",
-    location: "Also from home :)",
+    location: "Home",
     description:
       "I designed and created Teclo Oy's website as a complete product using WordPress. The project was built for a client, and I used Elementor to bring the design to life. My focus was on creating a clean, responsive, and user-friendly site that represents the company professionally while remaining easy to maintain and update",
     skills: ["WordPress", "Elementor", "Communication"],
@@ -36,7 +36,7 @@ export const experiences = [
     highlight: true,
   },
   {
-    role: "Customer servant and a salesman",
+    role: "Customer Servant & Salesman",
     company: "Alko Oy",
     type: "Part-Time",
     companyUrl:
@@ -45,7 +45,7 @@ export const experiences = [
     location: "Espoo",
     description:
       "I worked as a Christmas helper during the holiday rush, primarily assisting at the cash register. I also actively helped with shelf stocking and supported customers to ensure they had a positive shopping experience. This role taught me how to work efficiently under pressure and manage multiple tasks at once especially on New Year's Eve",
-    skills: ["Cash Registry", "Customer Service"],
+    skills: ["Cash Registry", "Customer Service", "Communication", "Critical Thinking"],
     highlight: false,
   },
   {
@@ -80,7 +80,7 @@ export const experiences = [
     location: "Espoo",
     description:
       "While studying, I worked as a salesperson, where I took care of cashier duties, assisted customers, and ensured that products were displayed and restocked properly. The role gave me valuable experience in customer service, teamwork, and responsibility, while also teaching me how to stay organized and efficient in a fast-paced environment",
-    skills: ["Cash Registry", "Customer Service", "Team Work", "Info Point"],
+    skills: ["Cash Registry", "Customer Service", "Team Work", "Info Point", "Problem Solving"],
     highlight: false,
   },
   {
