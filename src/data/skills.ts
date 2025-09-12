@@ -2,12 +2,12 @@ export const skills = [
     {
       category: "Frontend",
       icon: "🎨",
-      items: ["React", "TypeScript", "JavaScript", "Tailwind CSS", "HTML5", "CSS3"],
+      items: ["React", "TypeScript", "JavaScript", "Tailwind CSS", "HTML5", "CSS3", "BootStrap"],
     },
     {
       category: "Backend",
       icon: "⚙️",
-      items: ["Node.js (APIs)", "Python", "Java"],
+      items: ["Node.js (APIs)", "Python", "Java", "Docker", "MySQL"],
     },
     {
       category: "Tools & DevOps",
