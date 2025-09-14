@@ -17,7 +17,7 @@ function Experience() {
       case "Freelance":
         return "bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200";
       case "Education":
-        return "bg-sky-100 text-sky-800 dark:bg-sky-900 dark:text-sky-200";
+        return "bg-[oklch(0.9_0.02_203.9)] text-[oklch(0.3943_0.0647_203.9)] dark:bg-[oklch(0.2_0.05_203.9)] dark:text-[oklch(0.6_0.0647_203.9)]";
       default:
         return "bg-gray-100 text-gray-800 dark:bg-gray-900 dark:text-gray-200";
     }
@@ -41,7 +41,7 @@ function Experience() {
               }}
             >
               {/* Timeline dot */}
-              <div className="absolute left-6 w-4 h-4 bg-blue-500 rounded-full border-4 border-white dark:border-gray-900 z-10"></div>
+              <div className="absolute left-6 w-4 h-4 bg-[oklch(0.3943_0.0647_203.9)] dark:bg-[oklch(0.3943_0.0647_203.9)] rounded-full border-4 border-white dark:border-gray-900 z-10"></div>
 
               {/* Experience card */}
               <div className="ml-16 flex-1">
@@ -59,12 +59,12 @@ function Experience() {
 
                   {/* Role and company */}
                   <div className="mb-4">
-                    <h3 className="text-xl font-bold text-gray-800 dark:text-white mb-1">
+                    <h3 className="text-xl font-bold text-gray-800 dark:text-[oklch(0.9422_0.011_211.04)] mb-1">
                       {exp.role}
                     </h3>
                     <a
                       href={exp.companyUrl}
-                      className="text-blue-600 dark:text-blue-400 text-lg hover:underline font-medium"
+                      className="text-[oklch(0.3943_0.0647_203.9)] dark:text-[oklch(0.4800_0.0647_203.9)] text-lg hover:underline font-medium"
                     >
                       {exp.company}
                     </a>
@@ -148,8 +148,8 @@ function Experience() {
               onClick={() => setActiveTab("highlights")}
               className={`px-3 py-1.5 sm:px-6 sm:py-2 rounded-md font-medium transition-colors text-sm sm:text-base ${
                 activeTab === "highlights"
-                  ? "bg-gradient-to-r from-sky-400 to-blue-500 dark:from-sky-500 dark:to-blue-700 text-white shadow-sm"
-                  : "text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white"
+                  ? "bg-[oklch(0.3943_0.0647_203.9)] dark:bg-[oklch(0.3943_0.0647_203.9)] text-white dark:text-[oklch(0.9422_0.011_211.04)] shadow-sm"
+                  : "text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-[oklch(0.9422_0.011_211.04)]"
               }`}
             >
               Highlights
@@ -158,8 +158,8 @@ function Experience() {
               onClick={() => setActiveTab("timeline")}
               className={`px-3 py-1.5 sm:px-6 sm:py-2 rounded-md font-medium transition-colors text-sm sm:text-base ${
                 activeTab === "timeline"
-                  ? "bg-gradient-to-r from-sky-400 to-blue-500 dark:from-sky-500 dark:to-blue-700 text-white shadow-sm"
-                  : "text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white"
+                  ? "bg-[oklch(0.3943_0.0647_203.9)] dark:bg-[oklch(0.3943_0.0647_203.9)] text-white dark:text-[oklch(0.9422_0.011_211.04)] shadow-sm"
+                  : "text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-[oklch(0.9422_0.011_211.04)]"
               }`}
             >
               Timeline
@@ -168,7 +168,7 @@ function Experience() {
         </div>
 
         <div className="mb-16 text-center">
-          <h2 className="mb-4 font-bold text-4xl dark:text-white">
+          <h2 className="mb-4 font-bold text-4xl dark:text-[oklch(0.9422_0.011_211.04)]">
             {activeTab === "highlights"
               ? "Professional Highlights"
               : "Full Timeline"}
