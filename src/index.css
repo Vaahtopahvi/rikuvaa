@@ -3,36 +3,11 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  --background: oklch(1 0 0);
+  --background: oklch(0.9422 0.011 211.04); /* Sand White */
   --foreground: oklch(0.2922 0.0156 264.3);
   --card-background: oklch(0.98 0.005 264.3);
-  --active: oklch(0.5332 0.2596 262.64);
+  --active: oklch(0.3943 0.0647 203.9); /* Deep Sea Green */
   --primary-foreground: oklch(1 0 0);
-  --color-punainen: oklch(0.6275 0.2044 29.234);
-
-  /* Light Accent gradient */
-  ---gradient-primary: linear-gradient(
-    to right,
-    oklch(0.5332 0.2596 262.64),
-    oklch(0.623 0.2799 310.69)
-  );
-
-  /* Dark Accent gradient */
-  --gradient-primary-dark: linear-gradient(
-    to right,
-    oklch(0.6048 0.2142 262.15),
-    oklch(0.6937 0.2284 312.73)
-  );
-}
-
-/* Custom utility for applying gradients */
-
-.bg-gradient-primary {
-  background: var(--gradient-primary);
-}
-
-.dark .bg-gradient-primary {
-  background: var(--gradient-primary-dark);
 }
 
 .bg-card {
@@ -40,9 +15,9 @@
 }
 
 .dark {
-  --background: oklch(0.1998 0.0086 264.36);
+  --background: oklch(0.2474 0.0224 232.37); /* Mirage */
   --foreground: oklch(0.9679 0.0027 264.54);
-  --active: oklch(0.6048 0.2142 262.15);
+  --active: oklch(0.3943 0.0647 203.9); /* Deep Sea Green */
 }
 
 body {
@@ -91,13 +66,4 @@ body {
 
 .dark .project-card {
   background-color: oklch(0.2313 0.012 270.86);
-}
-
-/* Project button background */
-.project-button {
-  background-color: transparent;
-}
-
-.dark .project-button {
-  background-color: oklch(0.1998 0.0086 264.36);
 }
