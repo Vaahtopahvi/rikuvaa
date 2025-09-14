@@ -40,7 +40,7 @@ export const experiences = [
     company: "Alko Oy",
     type: "Part-Time",
     companyUrl:
-      "https://www.haaga-helia.fi/fi/amk-k/tradenomi-amk-tietojenkasittely-helsinki",
+      "https://www.alko.fi/",
     date: "November 2023 - January 2024",
     location: "Espoo",
     description:
