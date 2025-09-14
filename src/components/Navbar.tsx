@@ -57,7 +57,7 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 right-0 bg-background/80 backdrop-blur-xl z-50 shadow-sm">
       <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
         {/* logo .. */}
-        <span className="font-bold text-xl bg-gradient-to-r from-indigo-500 to-purple-500 bg-clip-text text-transparent">
+        <span className="font-bold text-xl text-[oklch(0.3943_0.0647_203.9)] dark:text-[oklch(0.45_0.0647_203.9)]">
           Portfolio
         </span>
 
@@ -70,9 +70,9 @@ const Navbar = () => {
                 onClick={() => setActive(link.id)}
                 className={`${
                   active === link.id
-                    ? "text-indigo-600 dark:text-indigo-400 font-medium"
+                    ? "text-[oklch(0.3943_0.0647_203.9)] dark:text-[oklch(0.3943_0.0647_203.9)] font-medium"
                     : "text-gray-700 dark:text-gray-300"
-                } hover:text-indigo-500 dark:hover:text-indigo-300 transition text-xl
+                } hover:text-[oklch(0.3943_0.0647_203.9)] dark:hover:text-[oklch(0.5_0.0647_203.9)] transition text-xl
                 `}
               >
                 {link.label}
@@ -110,9 +110,9 @@ const Navbar = () => {
                   }}
                   className={`block px-4 py-2 rounded-md ${
                     active === link.id
-                      ? "text-indigo-600 dark:text-indigo-400 font-medium"
+                      ? "text-[oklch(0.3943_0.0647_203.9)] dark:text-[oklch(0.3943_0.0647_203.9)] font-medium"
                       : "text-gray-700 dark:text-gray-300"
-                  } hover:text-indigo-500 dark:hover:text-indigo-300 transition text-lg`}
+                  } hover:text-[oklch(0.3943_0.0647_203.9)] dark:hover:text-[oklch(0.3943_0.0647_203.9)] transition text-lg`}
                 >
                   {link.label}
                 </a>
