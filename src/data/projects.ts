@@ -12,7 +12,7 @@ export const projects = [
       "Lucide-icons",
     ],
     category: "Frontend",
-    demoUrl: "https://github.com/vaahtopahvi/rikuvaa",
+    demoUrl: "https://vaahtopahvi.github.io/rikuvaa/",
     githubUrl: "https://github.com/vaahtopahvi/rikuvaa",
     featured: true,
     hasDemo: true,
