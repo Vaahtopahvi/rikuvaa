@@ -33,8 +33,7 @@ function Contact() {
           {"Let's Connect!"}
         </h2>
         <p className="text-xl text-gray-500 dark:text-gray-400">
-          I'm always open to discussing new opportunities, collaborations, or
-          just having a chat about tech, cars or games
+        You can hit me up to discuss about new opportunities, exciting projects or ask about anything
         </p>
       </div>
 
@@ -98,7 +97,7 @@ function Contact() {
               <div className="flex items-center gap-3 text-gray-700 dark:text-gray-300">
                 <FileDown className="w-5 h-5" />
                 <a
-                  href="/cv.pdf"
+                  href="/rikuvaa/cv.pdf"
                   download="Riku_Vaatanen_CV.pdf"
                   className="hover:text-[oklch(0.3943_0.0647_203.9)] dark:hover:text-[oklch(0.3943_0.0647_203.9)] transition-colors cursor-pointer"
                 >
