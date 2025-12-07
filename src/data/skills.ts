@@ -7,12 +7,12 @@ export const skills = [
     {
       category: "Backend",
       icon: "⚙️",
-      items: ["Node.js (APIs)", "Python", "Java", "Docker", "MySQL"],
+      items: ["Node.js (APIs)", "Python", "Java", "Docker", "MySQL", "MongoDB", "Express.js"],
     },
     {
       category: "Tools & DevOps",
       icon: "🛠️",
-      items: ["Git", "GitHub", "VS Code", "Figma"],
+      items: ["Git", "GitHub", "VS Code", "Figma", "Postman"],
     },
     {
       category: "Soft Skills",
