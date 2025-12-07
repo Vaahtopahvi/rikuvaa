@@ -7,7 +7,7 @@ export const experiences = [
     date: "August - September 2025",
     location: "Home",
     description:
-      "I designed and created Teclo Oy's website as a complete product using WordPress. The project was built for a client, and I used Elementor to bring the design to life. My focus was on creating a clean, responsive, and user-friendly site that represents the company professionally while remaining easy to maintain and update",
+      "I designed and created Teclo Oy's website as a complete product using WordPress. The project was built for a client, and I used Elementor to bring the design to life. My focus was on creating a clean, responsive, and user-friendly site that represents the company professionally while remaining easy to maintain and update.\n\nNOTE: The website layout is ready but it lacks real content. You can click [HERE](https://www.teclo.fi/?cmp_bypass=f38dcd92d0effa3f7d762043d8b34f1b) to see how it looks now",
     skills: ["WordPress", "Elementor", "Communication"],
     highlight: true,
   },
@@ -20,7 +20,14 @@ export const experiences = [
     location: "Espoo",
     description:
       "While working at Professio, I developed a Python program that automated the tedious task of formatting and cleaning large customer data lists. The tool reduced errors, improved consistency, and saved significant time, and it proved so useful that my manager asked to make it available for the whole team. Alongside this, my main responsibility was building customer groups in a business-oriented manner and improving the quality of existing data",
-    skills: ["Python", "CRM", "Excel"],
+    skills: [
+      "Python",
+      "CRM",
+      "Excel",
+      "GDPR",
+      "Data Management",
+      "Data Enhancement",
+    ],
     highlight: true,
   },
   {
@@ -39,13 +46,17 @@ export const experiences = [
     role: "Customer Servant & Salesman",
     company: "Alko Oy",
     type: "Part-Time",
-    companyUrl:
-      "https://www.alko.fi/",
+    companyUrl: "https://www.alko.fi/",
     date: "November 2023 - January 2024",
     location: "Espoo",
     description:
       "I worked as a Christmas helper during the holiday rush, primarily assisting at the cash register. I also actively helped with shelf stocking and supported customers to ensure they had a positive shopping experience. This role taught me how to work efficiently under pressure and manage multiple tasks at once especially on New Year's Eve",
-    skills: ["Cash Registry", "Customer Service", "Communication", "Critical Thinking"],
+    skills: [
+      "Cash Registry",
+      "Customer Service",
+      "Communication",
+      "Critical Thinking",
+    ],
     highlight: false,
   },
   {
@@ -67,7 +78,7 @@ export const experiences = [
       "SQL",
       "AD",
       "Office365",
-      "Agile Workflow"
+      "Agile Workflow",
     ],
     highlight: true,
   },
@@ -80,7 +91,13 @@ export const experiences = [
     location: "Espoo",
     description:
       "While studying, I worked as a salesperson, where I took care of cashier duties, assisted customers, and ensured that products were displayed and restocked properly. The role gave me valuable experience in customer service, teamwork, and responsibility, while also teaching me how to stay organized and efficient in a fast-paced environment",
-    skills: ["Cash Registry", "Customer Service", "Team Work", "Info Point", "Problem Solving"],
+    skills: [
+      "Cash Registry",
+      "Customer Service",
+      "Team Work",
+      "Info Point",
+      "Problem Solving",
+    ],
     highlight: false,
   },
   {
