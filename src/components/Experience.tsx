@@ -23,6 +23,43 @@ function Experience() {
     }
   };
 
+  // function to parse markdown-style links and convert them to JSX
+  const parseDescriptionWithLinks = (description: string) => {
+    const linkRegex = /\[([^\]]+)\]\(([^)]+)\)/g;
+    const parts = [];
+    let lastIndex = 0;
+    let match;
+
+    while ((match = linkRegex.exec(description)) !== null) {
+      // add text before the link
+      if (match.index > lastIndex) {
+        parts.push(description.slice(lastIndex, match.index));
+      }
+
+      // add the link
+      parts.push(
+        <a
+          key={match.index}
+          href={match[2]}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-[oklch(0.3943_0.0647_203.9)] dark:text-[oklch(0.4800_0.0647_203.9)] hover:underline font-medium"
+        >
+          {match[1]}
+        </a>
+      );
+
+      lastIndex = match.index + match[0].length;
+    }
+
+    // add remaining text after the last link
+    if (lastIndex < description.length) {
+      parts.push(description.slice(lastIndex));
+    }
+
+    return parts.length > 0 ? parts : description;
+  };
+
   const renderTimeline = (experiencesList: typeof experiences) => {
     return (
       <div className="relative">
@@ -84,7 +121,7 @@ function Experience() {
 
                   {/* Description */}
                   <p className="text-gray-700 dark:text-gray-300 mb-4 leading-relaxed text-lg">
-                    {exp.description}
+                    {parseDescriptionWithLinks(exp.description)}
                   </p>
 
                   {/* Skills */}
