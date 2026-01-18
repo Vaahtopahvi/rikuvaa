@@ -21,7 +21,7 @@ export const projects = [
     id: 2,
     title: "Loopy Games",
     description:
-      "This is a MERN project, a backlog of video games that have left a strong impression on me, titles I’ve enjoyed so much that I’d happily recommend them to others. For each game, I note my rating, the hours I’ve spent, and a short review. This way I can remember what made them so special",
+      "This is a MERN project, a backlog of video games that have left a strong impression on me, titles I’ve enjoyed so much that I’d happily recommend them to others. For each game, I note my rating, the hours I’ve spent, and a short review. This way I can remember what made them so special. NOTE, the site can take a while to wake up from sleep mode",
     technologies: [
       "React",
       "TypeScript",

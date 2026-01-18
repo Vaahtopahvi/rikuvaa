@@ -1,4 +1,5 @@
-import profileImage from "../assets/IMG_0119__01(1).jpg";
+import profileImage from "../assets/IMG_0119_01_1_1.jpg";
+// /home/riku/koodit/rikuvaa/src/assets/IMG_0119_01_1_1.jpg
 
 function About() {
   return (
